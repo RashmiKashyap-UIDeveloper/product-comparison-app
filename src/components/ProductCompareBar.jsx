@@ -9,14 +9,14 @@ const ProductCompareBar = ({ compareList, handleRemove, handleComparison, setCom
                     {
                         compareList.map((product) => (
                             <div key={product.id} className='col-2 col-md-3'>
-                                <div className='d-flex border rounded overflow-hidden position-relative p-2 min-h-100 align-items-center'>
+                                <div className='d-flex border rounded overflow-hidden position-relative p-2 min-h-100 align-items-center justify-content-center justify-content-sm-start'>
                                     {/* Remove button (X icon) */}
                                     <span onClick={() => handleRemove(product.id)} className='position-absolute end-0 top-0 cursor-pointer'>
                                         <i className="bi bi-x fs-6 fs-sm-5 lh-sm"></i>
                                     </span>
 
                                     {/* Product thumbnail */}
-                                    <div className='img-wrapper d-flex align-items-center justify-content-center rounded overflow-hidden mx-auto me-md-2 bg-body-secondary mw-sm-60px mh-sm-60px min-w-sm-60px min-h-sm-60px' style={{ minWidth: "30px" }}>
+                                    <div className='img-wrapper d-flex align-items-center justify-content-center rounded overflow-hidden me-md-2 bg-body-secondary mw-sm-60px mh-sm-60px min-w-sm-60px min-h-sm-60px' style={{ minWidth: "30px" }}>
                                         <img src={product.image} alt={product.name} className='img-fluid object-fit-cover p-sm-1' />
                                     </div>
 
