@@ -85,7 +85,7 @@ function App() {
   }, []);
 
   return (
-    <div className={`${compareList.length >=2 ? "pb-5 mb-3":""}`}>
+    <div className={`${compareList.length >=2 ? "pb-6":""}`}>
       {/* Product List Section */}
       <div className={`${compareList.length >=2? "pb-4 pb-sm-5":""}`} ref={productSectionRef}>
         <ProductList
@@ -122,7 +122,7 @@ function App() {
 
       {/* Scroll to top/back button (shown on larger screens) */}
       <button
-        className="btn btn-light rounded-circle mb-3 position-fixed end-0 bottom-0 m-2 z-1 d-none d-sm-flex align-items-center justify-content-center"
+        className="btn btn-dark rounded-circle mb-3 position-fixed end-0 bottom-0 m-2 z-1 d-none d-sm-flex align-items-center justify-content-center"
         onClick={onBack}
         style={{
           maxWidth: "35px", maxHeight: "35px",

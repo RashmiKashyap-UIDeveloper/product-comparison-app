@@ -125,6 +125,9 @@ button:focus-visible {
   background: hsl(45.97deg 38.19% 40%) !important
 }
 
+.pb-6 {
+    padding-bottom: 4.5rem !important;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
